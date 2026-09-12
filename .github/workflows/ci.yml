@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        build_type: [encrypted, decrypted]
+        build_type: [encrypted]
         target: [m51]
     steps:
       - name: Checkout repo

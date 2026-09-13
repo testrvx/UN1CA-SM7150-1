@@ -1,0 +1,30 @@
+LOG_STEP_IN "- Adding A73 V530 Adreno618 gpu from a73xqxx"
+
+if [ "$TARGET_PLATFORM_SDK_VERSION" -lt "36" ]; then
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/eglSubDriverAndroid.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/libEGL_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/libGLESv1_CM_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/libGLESv2_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/libq3dtools_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/egl/libq3dtools_esx.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/hw/vulkan.adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/libCB.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/libadreno_utils.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/libgsl.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/libllvm-glnext.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib/libllvm-qcom.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/eglSubDriverAndroid.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/libEGL_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/libGLESv1_CM_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/libGLESv2_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/libq3dtools_adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/egl/libq3dtools_esx.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/hw/vulkan.adreno.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/libCB.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/libadreno_utils.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/libgsl.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/libllvm-glnext.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+    ADD_TO_WORK_DIR "a73xqxx" "vendor" "lib64/libllvm-qcom.so" 0 0 644 "u:object_r:same_process_hal_file:s0"
+fi
+
+LOG_STEP_OUT

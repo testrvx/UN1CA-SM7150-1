@@ -90,7 +90,7 @@ LOG_STEP_IN "- Applying hex patches for atoll -> sm6150"
 find "$WORK_DIR/vendor" -type f -name '*atoll*' -print0 2>/dev/null |
  while IFS= read -r -d '' f; do
    HEX_PATCH "$f" "61746F6C6C2E736F00" "736D363135302E736F"
-   EVAL "mv -- \"$f\" \"$(printf '%s' \"$f\" | sed 's/atoll/sm6150/g')\""
+   EVAL "mv -- \"$f\" \"\${f//atoll/sm6150}\""
  done
 LOG_STEP_OUT
 

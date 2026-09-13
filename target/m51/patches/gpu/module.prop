@@ -1,0 +1,3 @@
+id=gpu
+name=GPU
+description=Update Adreno 618 gpu blobs from a73xqxx V530 (09/12/25).

@@ -86,7 +86,6 @@ jobs:
 
       - name: Generate build config
         run: |
-<<<<<<< HEAD
           source ./buildenv.sh m51
           {
             echo "DEBUG=$DEBUG"
